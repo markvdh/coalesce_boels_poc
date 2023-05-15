@@ -2,15 +2,30 @@ defaultStorageMapping: SRC
 jobs: {}
 locations:
   BUSINESS:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: PRD_DB
+        schema: BUSINESS
   INFORMATION_DELIVERY:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: PRD_DB
+        schema: INFORMATION_DELIVERY
   RAW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: PRD_DB
+        schema: RAW
   SRC:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: DEV_DB
+        schema: POCDATALAKE
   STAGING:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: PRD_DB
+        schema: STAGING
 macros:
   Macro-SCALEFREE-DATAVAULT4COALESCE::1:
     id: SCALEFREE-DATAVAULT4COALESCE::1
