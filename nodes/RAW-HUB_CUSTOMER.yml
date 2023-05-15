@@ -9,7 +9,7 @@ steps:
       deployEnabled: true
       description: ""
       isDataVault: false
-      isMultisource: false
+      isMultisource: true
       locationID: ""
       locationName: RAW
       materializationType: table
@@ -32,6 +32,10 @@ steps:
                   - columnCounter: e0c75e28-12a6-4a43-8964-fb1a66a136c2
                     stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
+              - columnReferences:
+                  - columnCounter: a91da31a-6553-4a54-85a2-71aab5b22275
+                    stepCounter: 267fdc4a-8d4c-40cb-9f07-3ddf4d959995
+                transform: ""
           - columnReference:
               columnCounter: 35a33d17-2ac3-458d-b122-0a2f2eadf0a6
               stepCounter: fc8b560a-3a59-43bb-9db7-6b8ac2828125
@@ -44,6 +48,10 @@ steps:
                   - columnCounter: 1c105275-7afc-428b-9970-c57643782b06
                     stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
+              - columnReferences:
+                  - columnCounter: 54c183e2-be5e-4cf6-ae92-62803d4c9b5c
+                    stepCounter: 267fdc4a-8d4c-40cb-9f07-3ddf4d959995
+                transform: ""
           - columnReference:
               columnCounter: 8c6e27cc-5a38-40e4-9c2c-24aa5f4fc321
               stepCounter: fc8b560a-3a59-43bb-9db7-6b8ac2828125
@@ -55,6 +63,10 @@ steps:
               - columnReferences:
                   - columnCounter: 5f9e98d7-c366-4ad7-9ad0-c92209fc611e
                     stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
+                transform: ""
+              - columnReferences:
+                  - columnCounter: db967fec-563a-4598-8fe9-2a1be02f63ab
+                    stepCounter: 267fdc4a-8d4c-40cb-9f07-3ddf4d959995
                 transform: ""
           - columnReference:
               columnCounter: 2d9aa060-83b1-416c-8b37-7d7dfef13f78
@@ -70,6 +82,10 @@ steps:
                   - columnCounter: bdca80e9-a293-4dcb-a2f9-2ef1b480ebad
                     stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
+              - columnReferences:
+                  - columnCounter: d182af14-2137-4195-99c6-84a05b936e5d
+                    stepCounter: 267fdc4a-8d4c-40cb-9f07-3ddf4d959995
+                transform: ""
           - columnReference:
               columnCounter: d54321bf-4317-45aa-a250-7e749e15e850
               stepCounter: fc8b560a-3a59-43bb-9db7-6b8ac2828125
@@ -84,7 +100,10 @@ steps:
                   - columnCounter: b5aeb558-db9a-4ee8-8135-c29e243619be
                     stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
-        cteString: ""
+              - columnReferences:
+                  - columnCounter: 581b6ffe-0f26-41ee-8d1c-11993f899a0f
+                    stepCounter: 267fdc4a-8d4c-40cb-9f07-3ddf4d959995
+                transform: ""
         enabledColumnTestIDs: []
         sourceMapping:
           - customSQL:
@@ -94,7 +113,18 @@ steps:
                 nodeName: DVSTG_CUSTOMER_SAP
             join:
               joinCondition: FROM {{ ref('STAGING', 'DVSTG_CUSTOMER_SAP') }} "DVSTG_CUSTOMER_SAP"
-            name: HUB_CUSTOMER
+            name: SAP_CUSTOMER
+            noLinkRefs: []
+          - aliases:
+              DVSTG_CASHCUST: 267fdc4a-8d4c-40cb-9f07-3ddf4d959995
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGING
+                nodeName: DVSTG_CASHCUST
+            join:
+              joinCondition: FROM {{ ref('STAGING', 'DVSTG_CASHCUST') }} "DVSTG_CASHCUST"
+            name: CASHCUST
             noLinkRefs: []
       name: HUB_CUSTOMER
       overrideSQL: false
