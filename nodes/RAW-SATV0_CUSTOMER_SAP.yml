@@ -32,8 +32,12 @@ steps:
                   - columnCounter: e0c75e28-12a6-4a43-8964-fb1a66a136c2
                     stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
-          - columnReference:
-              columnCounter: f29914e2-6108-4971-8055-8d000f1ce76a
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0c313e83-2f6d-4421-921a-b0d69670189a
               stepCounter: 01c68377-7062-4fd6-becb-4ab98c4e94a3
             dataType: STRING
             description: ""
@@ -41,11 +45,15 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f6bdfeda-5ac1-4d57-81b8-3f61a65ec39f
-                    stepCounter: 2989a092-4775-403e-97da-d253fa53dae2
+                  - columnCounter: 5da79bb8-cc73-492d-b64b-195b6dc6bd65
+                    stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
-          - columnReference:
-              columnCounter: 6f88aebb-c3b5-455a-a72b-3b24af64f6b3
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 55f0b165-be57-4a58-afa7-94996f7de8c9
               stepCounter: 01c68377-7062-4fd6-becb-4ab98c4e94a3
             dataType: STRING
             description: ""
@@ -53,8 +61,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 08cb55c3-d821-4508-b251-c83c490de0d4
-                    stepCounter: 2989a092-4775-403e-97da-d253fa53dae2
+                  - columnCounter: 593d73bb-b89b-4a73-8f41-bea728b18a62
+                    stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
                 transform: ""
           - columnReference:
               columnCounter: e7fd25be-36b6-4dd6-b7e0-e6ac79ef42ec
