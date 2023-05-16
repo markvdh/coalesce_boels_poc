@@ -1,5 +1,13 @@
 defaultStorageMapping: SRC
-jobs: {}
+jobs:
+  Job-1:
+    excludeSelector: ""
+    id: 1
+    includeSelector: |
+      +{ location: RAW name: * } 
+    name: PoC Raw
+    steps: []
+    subgraphs: []
 locations:
   BUSINESS:
     mappingDefinitions:
