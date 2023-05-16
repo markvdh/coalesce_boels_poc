@@ -268,6 +268,54 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: "{{record_source()}}"
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 67ede992-155c-4d5f-92c8-71da9489d0f9
+              stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
+            dataType: VARCHAR(256)
+            description: ""
+            name: NAME_3
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 394beda9-d42c-43e2-a222-7b25ed1074c8
+                    stepCounter: 2989a092-4775-403e-97da-d253fa53dae2
+                transform: ""
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d5df00a8-6f16-4311-8844-9102efd714f8
+              stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
+            dataType: VARCHAR(256)
+            description: ""
+            name: NAME_4
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 6ff7c61d-4625-41f7-b1c8-ecb424788524
+                    stepCounter: 2989a092-4775-403e-97da-d253fa53dae2
+                transform: ""
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ed87b0f5-2914-4a6d-9c78-4e0446fd93bf
+              stepCounter: b18e7520-dc2b-4f96-9369-5340084b5d7e
+            dataType: VARCHAR(256)
+            description: ""
+            name: ORT_02
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7680aa76-a3b4-437f-a911-b251e9f7e2c4
+                    stepCounter: 2989a092-4775-403e-97da-d253fa53dae2
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
