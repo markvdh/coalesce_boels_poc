@@ -4,8 +4,15 @@ jobs:
     excludeSelector: ""
     id: 1
     includeSelector: |
-      +{ location: RAW name: * } 
+      +{ location: RAW name: * }
     name: PoC Raw
+    steps: []
+    subgraphs: []
+  Job-2:
+    excludeSelector: "+{ location: RAW name: * }"
+    id: 2
+    includeSelector: +{nodeType:Dimension}
+    name: PoCDimCustomer
     steps: []
     subgraphs: []
 locations:
@@ -3836,5 +3843,17 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-1:
+    id: "1"
+    name: KNA Subgraph
+    steps:
+      - 01c68377-7062-4fd6-becb-4ab98c4e94a3
+      - 2989a092-4775-403e-97da-d253fa53dae2
+      - fc8b560a-3a59-43bb-9db7-6b8ac2828125
+      - 48d3e9be-4911-44e1-9086-8a3d881d1efc
+      - 9e61541e-336b-4550-b6a5-f4c15f3faf25
+      - b18e7520-dc2b-4f96-9369-5340084b5d7e
+      - 302ef744-e745-4a5b-ac9a-6fd9019b7f33
+      - 30cd97f4-6bdc-44f3-9559-b19e53c801b2
 version: 1
