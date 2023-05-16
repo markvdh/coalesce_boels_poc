@@ -283,7 +283,7 @@ steps:
               - columnReferences:
                   - columnCounter: 394beda9-d42c-43e2-a222-7b25ed1074c8
                     stepCounter: 2989a092-4775-403e-97da-d253fa53dae2
-                transform: ""
+                transform: UPPER("STG_CUSTOMER_SAP"."NAME_3")
           - acceptedValues:
               strictMatch: false
               values: []
